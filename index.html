@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Interaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="controls">
+            <div class="ROOF">
+                <div class="hover-effect">sad</div>
+                <div class="hover-effect">cold</div>
+                <div class="hover-effect">irritable</div>
+                <div class="hover-effect">dependent</div>
+                <div class="hover-effect">sensitive</div>
+                <div class="hover-effect">appetite</div>
+                <div class="hover-effect">conflict</div>
+                <div class="hover-effect">entertain</div>
+            </div>
+            <div class="BRICK">
+                <div class="hover-effect">sleep</div>
+                <div class="hover-effect">energy</div>
+                <div class="hover-effect">period</div>
+                <div class="hover-effect">pain</div>
+                <div class="hover-effect">ance</div>
+                <div class="hover-effect">sore</div>
+                <div class="hover-effect">swelling</div>
+                <div class="hover-effect">heaviness</div>
+                <div class="hover-effect">dizzy</div>
+                <div class="hover-effect">discomfort</div>
+            </div>
+            <div class="SHADOW">
+                <div class="hover-effect">unmotivated</div>
+                <div class="hover-effect">impatient</div>
+                <div class="hover-effect">exhausted</div>
+                <div class="hover-effect">distracted</div>
+                <div class="hover-effect">withdrawn</div>
+                <div class="hover-effect">spotting</div>
+            </div>
+        </div>
+
+    </div>
+
+    <canvas id="structureCanvas" width="640" height="480"></canvas>
+    <canvas id="shadowCanvas" width="640" height="120"></canvas>
+    <div class="controls">
+        <div class="ROOF">
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/sad.png">sad</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/cold.png">cold</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/irritable.png">irritable</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/dependent.png">dependent</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/sensitive.png">sensitive</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/appetite.png">appetite</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/conflict.png">conflict</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/anxious.png">anxious</span>
+            <span class="word" onclick="draw('ROOF',this)" data-image-path="pic/entertain.png">entertain</span>
+            <!-- Add the other words for the ROOF line here -->
+        </div>
+        <div class="BRICK">
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/sleep.png">sleep</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/energy.png">energy</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/period.png">period</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/pain.png">pain</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/ance.png">ance</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/sore.png">sore</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/swelling.png">swelling</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/heaviness.png">heaviness</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/dizzy.png">dizzy</span>
+            <span class="word" onclick="draw('BRICK',this)" data-image-path="pic/discomfort.png">discomfort</span>
+        </div>
+        <div class="SHADOW">
+            <span class="word" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">unmotivated</span>
+            <span class="word" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">impatient</span>
+            <span class="word" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">exhausted</span>
+            <span class="word" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">distracted</span>
+            <span class="word" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">withdrawn</span>
+            <span class="word" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">spotting</span>
+            <!-- Add the other words for the SHADOW line here -->
+        </div>
+    </div>
+
+    <
+    <script src="script.js"></script>
+</body>
+
+</html>
