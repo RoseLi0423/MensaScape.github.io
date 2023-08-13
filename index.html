@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Interaction</title>
+    <title>MensaScape</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 200vh;">
+    <img src="LOGO.png" alt="Logo" style="margin-bottom: 150px; margin-top: 250px;">
+
     <div class="frame">
         <div class="controls">
             <div class="ROOF">
@@ -41,9 +43,11 @@
                 <div class="hover-effect">withdrawn</div>
                 <div class="hover-effect">spotting</div>
             </div>
+            <div class="hover-effect">How about your menstruation?</div>
         </div>
-
     </div>
+
+    <div class="arrow-down"></div>
 
     <canvas id="structureCanvas" width="640" height="480"></canvas>
     <canvas id="shadowCanvas" width="640" height="120"></canvas>
@@ -82,8 +86,7 @@
             <!-- Add the other words for the SHADOW line here -->
         </div>
     </div>
-
-    <
+    <a href="text.html" class="mensascape-btn" style="margin-top: 100px;">More Stories</a>
     <script src="script.js"></script>
 </body>
 

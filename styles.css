@@ -1,16 +1,30 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200vh;
-    background: #1F1D1B
+:root {
+    --light: #fefbec;  
+    --back: #1F1D1B;   
 }
+
+body {
+    background: var(--back);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.arrow-down {
+    position: relative;
+    top:300px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;   
+    border-right: 10px solid transparent; 
+    border-top: 15px solid var(--light);         
+    display: inline-block;  
+}
+
+
 
 .hover-effect {
     letter-spacing: 10px;
     transition: letter-spacing 0.3s ease;
-    color: #FFFEF8;
+    color: var(--light);
     font-size: 20px;
 }
 
@@ -22,11 +36,13 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-bottom: 100px;
     transform: translate(-50%, -50%); 
 }
 
 #structureCanvas{
-    margin-top: 150px;
+    position: relative;
+    margin-top: 300px;
 }
 
 .controls {
@@ -40,9 +56,8 @@ body {
 
 .word {
     text-align: center;
-    color: #FFFEF8;
+    color: var(--light);
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     word-wrap: break-word;
     margin: 5px;
     cursor: pointer;
@@ -73,4 +88,72 @@ body {
     gap: 28px;
     align-items: center;
     justify-content: center;
+}
+
+/* For text.html */
+.page-container {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.pics-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto; 
+    justify-content: center; 
+    padding-right: 100px; 
+}
+
+.pic-row {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    position: relative;
+}
+
+
+.pic-pair {
+    position: relative;
+    margin-left: 60px; 
+}
+
+.left-pic {
+    display: none;
+    position: fixed; 
+    left: 5%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.right-pic {
+    display: block;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    bottom: 60px;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* botton */
+
+.mensascape-btn {
+    color: var(--light); /* white text color */
+    font-size: 21px;
+    transition: background-color 0.3s; 
+    align-items: center;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.mensascape-btn:hover {
+    color:var(--back);
+    background-color: var(--light);
 }
