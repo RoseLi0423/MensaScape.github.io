@@ -5,14 +5,14 @@
 
 body {
     background: var(--back);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .arrow-down {
     position: relative;
-    top:300px;
     width: 0;
     height: 0;
+    top: 100px;
     border-left: 10px solid transparent;   
     border-right: 10px solid transparent; 
     border-top: 15px solid var(--light);         
@@ -20,12 +20,12 @@ body {
 }
 
 
-
 .hover-effect {
     letter-spacing: 10px;
     transition: letter-spacing 0.3s ease;
     color: var(--light);
     font-size: 20px;
+    cursor: pointer;
 }
 
 .hover-effect:hover {
@@ -60,7 +60,6 @@ body {
     font-size: 20px;
     word-wrap: break-word;
     margin: 5px;
-    cursor: pointer;
 }
 
 .ROOF {
@@ -142,6 +141,7 @@ body {
     transform: translateX(-50%); 
 }
 
+
 /* botton */
 
 .mensascape-btn {
@@ -156,4 +156,36 @@ body {
 .mensascape-btn:hover {
     color:var(--back);
     background-color: var(--light);
+}
+
+.legend{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;           /* This makes it a circle */
+    border: 2px solid white;      /* White border/stroke */
+    background-color: transparent;/* No fill color */
+    font-size: 24px;              /* Adjust as needed */
+    color: white;                 /* Font color */
+    cursor: pointer;              /* Hand pointer on hover */
+    outline: none;                /* Remove default focus outline */
+    display: flex;                /* Center the "?" in the button */
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#imageOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
 }
