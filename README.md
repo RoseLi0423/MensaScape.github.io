@@ -1,2 +1,2 @@
-# Portfolio
+# MensaScape
 The dissertation explores how visualisation can help women self-reflect the menstrua- tion, highlighting the contrast between im- personal technical approaches and visual interpretations. Employed the participa- tory design methodology to transform the role of designer and user, the visualisation toolkit, MensaScape, is the eventual culmi- nation in a tangible toolkit for menstrua- tion,encapsulated in a paper-based booklet complemented by a website.This body of work aspires to bridging the personal data domain and its visualisation systems gap, underlining the transformative power of sketching in enhancing self-reflection and contextualizing individual experiences.
