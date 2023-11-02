@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
 :root {
     --light: #fefbec;  
     --back: #1F1D1B;   
@@ -159,18 +165,12 @@ body {
 }
 
 .legend{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;           /* This makes it a circle */
-    border: 2px solid white;      /* White border/stroke */
-    background-color: transparent;/* No fill color */
-    font-size: 24px;              /* Adjust as needed */
-    color: white;                 /* Font color */
+    font-size: 20px;
+    color: var(--light);
+    border:var(--back);
+    background-color: var(--back);
+    outline: none;
     cursor: pointer;              /* Hand pointer on hover */
-    outline: none;                /* Remove default focus outline */
-    display: flex;                /* Center the "?" in the button */
-    justify-content: center;
-    align-items: center;
 }
 
 .hidden {
