@@ -10,7 +10,7 @@
 
 <body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 200vh;">
     <img src="LOGO.png" alt="Logo" style="margin-bottom: 150px; margin-top: 250px;">
-
+    
     <div class="frame">
         <div class="controls">
             <div class="word"> <br>Venture into a digital sanctuary<br> where menstrual understanding harmonizes with
@@ -57,7 +57,10 @@
             <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">spotting</span>
             <!-- Add the other words for the SHADOW line here -->
         </div>
-        <button id="legend">?</button>
+
+        <button id="legend" style="margin-top: 10px; border: 0; background-color: #1F1D1B;">
+            <img src="pic/button.png" alt="Legend" style="border:0; stroke: none;">
+        </button>
         <div id="imageOverlay" class="hidden">
             <img src="pic/legend.png" alt="Overlay Image">
         </div>
