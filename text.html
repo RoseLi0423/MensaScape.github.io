@@ -4,70 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MensaScape</title>
+    <title>Other Stories</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 200vh;">
-    <img src="LOGO.png" alt="Logo" style="margin-bottom: 150px; margin-top: 250px;">
-    
-    <div class="frame">
-        <div class="controls">
-            <div class="word"> <br>Venture into a digital sanctuary<br> where menstrual understanding harmonizes with
-                self-reflection. <br> <br> Scroll and click to craft your distinct MensaScape.</div>
-            <div class="arrow-down" style="top:300px;"></div>
+<body style="overflow-x: hidden; overflow-y: auto; ">
+    <div class="page-container">
+        <div class="pics-column">
+            <div class="pic-row" style="margin-top: 320px;">
+                <div class="word">Hover to explore HER period:</div>
+                <div class="arrow-down" ></div>
+            </div>
+            <div class="pic-row" style="margin-top: 300px;">
+                <svg class="line" width="600" height="2" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill=#FFFEF8></rect>
+                </svg>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/1.png" alt="Left Picture 1">
+                    <img class="right-pic" src="vis/Frame1.png" alt="Right Picture 1">
+                </div>
+                <div class="pic-pair" style="margin-left: 100px; ">
+                    <img class="left-pic" src="text/2.png" alt="Left Picture 2">
+                    <img class="right-pic" src="vis/Frame2.png" alt="Right Picture 2">
+                </div>
+                
+            </div>
+            <div class="pic-row">
+                <svg class="line" width="600" height="2" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill=#FFFEF8></rect>
+                </svg>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/3.png" alt="Left Picture 3">
+                    <img class="right-pic" src="vis/Frame3.png" alt="Right Picture 3">
+                </div>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/4.png" alt="Left Picture 4">
+                    <img class="right-pic" src="vis/Frame4.png" alt="Right Picture 4">
+                </div>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/5.png" alt="Left Picture 5">
+                    <img class="right-pic" src="vis/Frame5.png" alt="Right Picture 5">
+                </div>
+            </div>
+            <div class="pic-row">
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/6.png" alt="Left Picture 6">
+                    <img class="right-pic" src="vis/Frame6.png" alt="Right Picture 6">
+                </div>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/7.png" alt="Left Picture 7">
+                    <img class="right-pic" src="vis/Frame7.png" alt="Right Picture 7">
+                </div>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/8.png" alt="Left Picture 8">
+                    <img class="right-pic" src="vis/Frame8.png" alt="Right Picture 8">
+                </div>
+                <svg class="line" width="600" height="2" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill=#FFFEF8></rect>
+                </svg>
+            </div>
+            <div class="pic-row" style="margin-bottom: 200px;">
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/9.png" alt="Left Picture 9">
+                    <img class="right-pic" src="vis/Frame9.png" alt="Right Picture 9">
+                </div>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/10.png" alt="Left Picture 10">
+                    <img class="right-pic" src="vis/Frame10.png" alt="Right Picture 10">
+                </div>
+                <div class="pic-pair">
+                    <img class="left-pic" src="text/11.png" alt="Left Picture 11">
+                    <img class="right-pic" src="vis/Frame11.png" alt="Right Picture 11">
+                </div>
+                <svg class="line" width="600" height="2" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill=#FFFEF8></rect>
+                </svg>
+            </div>
+
+            <a href="index.html" class="mensascape-btn">Your MensaScape</a>
         </div>
     </div>
-
-
-    <canvas id="structureCanvas" width="660" height="480"></canvas>
-    <canvas id="shadowCanvas" width="660" height="120"></canvas>
-    <div class="controls">
-        <div class="ROOF">
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/sad.png">sad</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/cold.png">cold</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/irritable.png">irritable</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/dependent.png">dependent</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/sensitive.png">sensitive</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/appetite.png">appetite</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/conflict.png">conflict</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/anxious.png">anxious</span>
-            <span class="hover-effect" onclick="draw('ROOF',this)" data-image-path="pic/entertain.png">entertain</span>
-            <!-- Add the other words for the ROOF line here -->
-        </div>
-        <div class="BRICK">
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/sleep.png">sleep</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/energy.png">energy</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/period.png">period</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/pain.png">pain</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/ance.png">ance</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/sore.png">sore</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/swelling.png">swelling</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/heaviness.png">heaviness</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)" data-image-path="pic/dizzy.png">dizzy</span>
-            <span class="hover-effect" onclick="draw('BRICK',this)"
-                data-image-path="pic/discomfort.png">discomfort</span>
-        </div>
-        <div class="SHADOW">
-            <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">unmotivated</span>
-            <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">impatient</span>
-            <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">exhausted</span>
-            <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">distracted</span>
-            <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">withdrawn</span>
-            <span class="hover-effect" onclick="draw('SHADOW',this)" data-image-path="pic/effect.png">spotting</span>
-            <!-- Add the other words for the SHADOW line here -->
-        </div>
-
-        <button id="legend" style="margin-top: 10px; border: 0; background-color: #1F1D1B;">
-            <img src="pic/button.png" alt="Legend" style="border:0; stroke: none;">
-        </button>
-        <div id="imageOverlay" class="hidden">
-            <img src="pic/legend.png" alt="Overlay Image">
-        </div>
-    </div>
-
-        <a href="text.html" class="mensascape-btn" style="margin-top: 100px;">Read More Stories...</a>
-        <script src="script.js"></script>
+    <script src="pic.js"></script>
 </body>
 
 </html>
